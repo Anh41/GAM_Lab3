@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 267054877}
   - component: {fileID: 267054876}
   m_Layer: 0
-  m_Name: Untitled-2
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 406653284}
   - component: {fileID: 406653283}
   - component: {fileID: 406653285}
+  - component: {fileID: 406653286}
   m_Layer: 0
   m_Name: Map level 2
   m_TagString: MapEdge
@@ -526,6 +527,21 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &406653286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406653282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd57881aa48152744ac4538a13de2b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 0}
+  totalTime: 10
+  playerData: {fileID: 11400000, guid: d95447efb1e9325478426fa353bc1b40, type: 2}
 --- !u!1 &541186707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
+    - target: {fileID: 4654043779988555355, guid: bfc0862553d6d184aa38da9e109278f1, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 7349812656113918870, guid: 0af55ee75b602834db8750bf66065b65, type: 3}
     - target: {fileID: 4654043779988555355, guid: bfc0862553d6d184aa38da9e109278f1, type: 3}
       propertyPath: countdownText
       value: 

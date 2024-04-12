@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PinWheelController : MonoBehaviour
+public class InfoManager : MonoBehaviour
 {
-    public float rotationSpeed = 100f;
+    public Text info;
+    string name = "Tran Quan";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +17,7 @@ public class PinWheelController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Quaternion deltaRotation = Quaternion.Euler(0, 0, rotationSpeed * Time.deltaTime);
-        transform.rotation = transform.rotation * deltaRotation;
+        info.text = "Ten nguoi choi:  " + name;
+      
     }
 }
